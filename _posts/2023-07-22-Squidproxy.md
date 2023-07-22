@@ -28,7 +28,7 @@ Step 3: Tải tập tin cài đặt của Squidproxy server
 Kiểm tra tập tin:
 
     ls -la 
-![](../images/Squid%20proxy/1.png)
+![](../images/Squidproxy/1.png)
 
 Step 4: Chạy file script đã tải
 
@@ -38,7 +38,7 @@ Step 5: Thêm xác thực cho proxy
     sudo squid-add-user
 Nhập tài khoản và mật khẩu
 
-![](../images/Squid%20proxy/2.png)
+![](../images/Squidproxy/2.png)
 
 Step 6: Kiểm tra cổng mạng của proxy trên server
 
@@ -52,7 +52,7 @@ Step 7: Đổi port của proxy
 Bấm phím `INS` trên bàn phím để vào chế độ chỉnh sửa. Sửa http_ port thành port monng muốn. Sau đó ấn `Ctrl+C` trên bàn phím để thoát chế độ chỉnh sửa.
 Tiếp tục ấn `:wq` để lưu và thoát trình soạn thảo. 
 
-![](../images/Squid%20proxy/3.png)
+![](../images/Squidproxy/3.png)
 
 Step 8: Khởi động lại Service và kiểm tra xem đã đổi port chưa
 
@@ -66,7 +66,7 @@ Step 2: Ấn ` Create fire wall rules`
 
 Step 3: Cấu hình mọi thứ như hình sau:
 
-![](../images/Squid%20proxy/4.png)
+![](../images/Squidproxy/4.png)
 
 Step 4: Ấn create để tạo cấu hình firewall.
 
