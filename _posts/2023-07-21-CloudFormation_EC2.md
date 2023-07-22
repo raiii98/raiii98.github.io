@@ -38,11 +38,13 @@ Resources:
       ImageId: ami-002843b0a9e09324a
       InstanceType: t2.micro
 ```
+
 Trong đó :
 - `ImageId`: là mã hệ điều hành mà bạn muốn cài cho instance ( lưu ý cùng 1 loại hệ điều hành nhưng mỗi khi vực sẽ có mã `ImageId` riêng)
 - `InstanceType`: Cấu hình phần cứng của instance mà bạn muốn sửa dụng.
 ### 2.2.  Cho phép các cổng SSH, HTTPS, HTTP hoặc các cổng khác.
 Thêm và security group các cổng: port 22 cho SSH, port 80 và 443 cho HTTP và HTTPS, port 2498 cho proxyserver ( có thể thay đổi theo port mà proxyserver thiết lập).
+
 ```
 AWSTemplateFormatVersion: 2010-09-09
 Description: Build a webapp stack with CloudFormation
@@ -78,6 +80,7 @@ Resources:
           ToPort: 2498
           CidrIp: 0.0.0.0/0
 ```
+
 ### 2.3. Thiết lập key-pair và các Output cần thiết cho instance.
 Key-pair được sử dụng để đảm bảo tính bảo mật trong việc đăng nhập vào các tài nguyên như máy ảo EC2 (Elastic Compute Cloud) hoặc các dịch vụ khác trong AWS.Bằng cách sử dụng key-pair, bạn có thể kết nối và quản lý từ xa các tài nguyên trên AWS, như máy ảo EC2, bằng cách sử dụng giao thức SSH (Secure Shell). Bạn sẽ cung cấp khóa riêng để xác thực và truy cập an toàn vào các máy chủ từ xa. Bạn có thể tạo sẵn 1 key-pair và thêm nó vào Cloud Formation hoặc để Cloud Formation tự tạo 1 key-pair khi khởi tạo.
 
@@ -129,6 +132,7 @@ Outputs:
     Value: !GetAtt WebAppInstance.PublicIp      # <-- Lấy ra PublicIp
 
 ```
+
 ### 2.4. Thiết lập các chương trình sẽ chạy sau khi khởi động instance.
 Khi tới bước này chúng ta đã khởi tạo thành công 1 instance bằng Cloud Formation.
 
@@ -265,18 +269,21 @@ Outputs:
     Value: !GetAtt WebAppInstance.PublicIp      # <-- Lấy ra PublicIp
 
 ```
+
 Nếu bạn muốn thay đổi port của proxy sever, sửa giá trị của lệnh `http_port 2498` theo giá trị bạn muốn trong khoảng `1000 - 65535`.
 
 ![](/assets/img/post/CloudFormation/1.png)
 
 Lưu ý khi bạn thay đổi giá trị của port thì bạn cần phải mở cổng tương ứng  tại `WebAppSecurityGroup`. Ví dụ khi bạn đổi port thành `http_port 8888` :
 
+
 ```
-        - IpProtocol: tcp
-          FromPort: 8888
-          ToPort: 8888
-          CidrIp: 0.0.0.0/0
+- IpProtocol: tcp
+  FromPort: 8888
+  ToPort: 8888
+  CidrIp: 0.0.0.0/0
 ```
+
 ## 3. Cài đặt môi trường AWSCLI.
 AWSCLI là viết tắt của "AWS Command Line Interface". Đây là một công cụ dòng lệnh được cung cấp bởi Amazon Web Services (AWS) để tương tác và quản lý các dịch vụ của AWS từ dòng lệnh trên máy tính của bạn.
 
@@ -314,6 +321,7 @@ Mở `cmd` và trỏ đến thư mục chứa file `.yaml`.
 ```
 cd C:\Users\Admin\Desktop\TOAN\YAML
 ```
+
 Chạy lệnh để tạo stack trên cloudformation:
 
 ```
@@ -440,6 +448,7 @@ Mở `cmd` tại thư mục này và chạy lệnh
 ```
 gcc Run_Create_EC2.c -o Create_EC2
 ```
+
 Chạy file `Create_EC2` để tạo stack.
 
 ## 5. Tạo file thực thi `DeleteStack`.
@@ -514,9 +523,11 @@ int main()
     return 0;
 }
 ```
+
 Mở `cmd` tại thư mục này và chạy lệnh
 
 ```
 gcc Run_Del_EC2.c -o Delete_EC2
 ```
+
 Chạy file `Delete_EC2` để xoá stack.
