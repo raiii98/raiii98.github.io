@@ -130,7 +130,7 @@ if [ "$IFACE" = usb0 ]; then
 fi
 ```
 
-Lưu và tiếp tự build kernel vào thẻ SD. Sau khi build xong và khởi động board các bạn kiểm tra bằng cách:
+Lưu và tiếp tục build kernel vào thẻ SD. Sau khi build xong và khởi động board các bạn kiểm tra bằng cách:
 
 ```
 ifconfig
@@ -144,7 +144,7 @@ usb0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 ```
 
-# Set up RNDIS trên máy tính Window.
+# 3. Set up RNDIS trên máy tính Window.
 
 Tải file RNDIS từ trang: https://www.driverscape.com/download/usb-ethernet-rndis-gadget
 
@@ -164,3 +164,5 @@ Tại cổng ethernet ảo đã cài các bạn set cấu hình ipv4 cho nó nh�
 ```
 
 Lưu lại và kiểm tra kết quả.
+
+>Chúc các bạn thành công :smiley: :smiley: :smiley:
