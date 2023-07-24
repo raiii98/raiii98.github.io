@@ -165,4 +165,4 @@ Tại cổng ethernet ảo đã cài các bạn set cấu hình ipv4 cho nó nh�
 
 Lưu lại và kiểm tra kết quả.
 
->Chúc các bạn thành công :smiley: :smiley: :smiley:
+>Chúc các bạn thành công :tw-1f60a: :tw-1f60a: :tw-1f60a:
