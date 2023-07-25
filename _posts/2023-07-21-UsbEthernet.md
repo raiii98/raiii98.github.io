@@ -165,4 +165,5 @@ Tại cổng ethernet ảo đã cài các bạn set cấu hình ipv4 cho nó nh�
 
 Lưu lại và kiểm tra kết quả.
 
->Chúc các bạn thành công 
+>Chúc các bạn thành công <i class="fa-solid fa-face-smile-wink"></i> <i class="fa-solid fa-face-smile-wink"></i> <i class="fa-solid fa-face-smile-wink"></i>
+
