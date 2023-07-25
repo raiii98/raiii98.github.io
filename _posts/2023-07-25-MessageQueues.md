@@ -166,26 +166,31 @@ Giả sử cho 1 Message Queues lưu trữ được tối đa 8 Message.
 >Đầu tiên gửi 1 Message có priority là 3:
 
 | null | null | null | null | null | null | null | 3   |
+
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | --- |
 
 >Tiếp theo gửi 1 Message có priority là 8:
 
 | null | null | null | null | null | null | 8   | 3   |
+
 | ---- | ---- | ---- | ---- | ---- | ---- | --- | --- |
 
 >Tiếp theo gửi 1 Message có priority là 1:
 
 | null | null | null | null | null | 8   | 3   | 1   |
+
 | ---- | ---- | ---- | ---- | ---- | --- | --- | --- |
 
 >Tiếp theo tiếp tục gửi 1 Message có priority là 1 ( để phân biệt ta ký hiệu priority này là  `1`):
 
 | null | null | null | null | 8   | 3   | `1` | 1   |
+
 | ---- | ---- | ---- | ---- | --- | --- | --- | --- |
 
 >Tiếp theo gửi 1 Message có priority là 5:
 
 | null | null | null | 8   | 5   | 3   | `1` | 1   |
+
 | ---- | ---- | ---- | --- | --- | --- | --- | --- |
 
 ### Trong bối cảnh POSIX Message Queues:
