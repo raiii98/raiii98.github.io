@@ -19,7 +19,9 @@ Message Queue (Hàng đợi Message) là một cơ chế giao tiếp giữa các
 
 Tất cả các process có thể trao đổi dữ liệu thông qua việc truy cập vào cùng một queues.
 
-![](/assets/img/post/MessageQueue/1.png) ![](/assets/img/post/MessageQueue/2.png)
+![](/assets/img/post/MessageQueue/1.png) 
+
+![](/assets/img/post/MessageQueue/2.png)
 
 Mỗi một khối dữ liệu được truyền đi được xác định một kiểu (TYPE với `System V`, Message Priority với `POSIX` ) cụ thể và người nhận có thể nhận được các dữ liệu đó tùy theo kiểu của dữ liệu. Trong nhiều trường hợp sử dụng, điều này đem lại nhiều hiệu quả hơn thay vì phải nhận dữ liệu theo cách FIFO như cách sử dụng các pipe (đường ống).
 
