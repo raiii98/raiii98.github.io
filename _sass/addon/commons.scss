@@ -380,16 +380,13 @@ img[data-src] {
     overflow-x: auto;
     border-spacing: 0;
     table-layout: fixed;
-    /* Thêm vào đây */
 
     thead {
       border-bottom: solid 2px rgba(210, 215, 217, 0.75);
 
       th {
         @extend %table-cell;
-        overflow-wrap: break-word;
-        /* Thêm vào đây */
-        word-wrap: break-word;
+        white-space: normal;
         /* Thêm vào đây */
       }
     }
@@ -408,9 +405,7 @@ img[data-src] {
 
         td {
           @extend %table-cell;
-          overflow-wrap: break-word;
-          /* Thêm vào đây */
-          word-wrap: break-word;
+          white-space: normal;
           /* Thêm vào đây */
         }
       }
@@ -421,6 +416,7 @@ img[data-src] {
 
   /* table */
 }
+
 
 
 
