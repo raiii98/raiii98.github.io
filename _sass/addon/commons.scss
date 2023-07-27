@@ -402,6 +402,8 @@ img[data-src] {
 
         td {
           @extend %table-cell;
+          word-break: break-word;
+          /* Thêm vào đây */
         }
       }
     }
@@ -411,6 +413,7 @@ img[data-src] {
 
   /* table */
 }
+
 
 /* --- post --- */
 
