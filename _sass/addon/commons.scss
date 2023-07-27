@@ -402,7 +402,9 @@ img[data-src] {
 
         td {
           @extend %table-cell;
-          word-break: break-word;
+          overflow-wrap: break-word;
+          /* Thêm vào đây */
+          word-wrap: break-word;
           /* Thêm vào đây */
         }
       }
@@ -413,6 +415,7 @@ img[data-src] {
 
   /* table */
 }
+
 
 
 /* --- post --- */
