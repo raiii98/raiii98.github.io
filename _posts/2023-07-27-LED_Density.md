@@ -94,3 +94,14 @@ Như vậy nhiệt độ Junction tại  mỗi một chip LED 1  trong trường
 
 - Sử dụng chip LED công suất thấp nhưng mật độ cao giúp dễ dàng trong việc tản nhiệt cho LED hơn, độ giao thoa ánh sáng sẽ tốt hơn. Nhưng sẽ khó khăn trong việc đi dây, sẽ làm tăng kích thước của mạch.
 - Sử dụng chip LED công suất cao nhưng mật độ thấp giúp thu gọn kích thước mạch, dễ dàng hơn trong việc gia công sau này. Nhưng sẽ gây khó khăn trong việc tính toán tản nhiệt ( cần phải phối hợp thêm nhiều yếu tố như: layout, chất liệu PCB, chất liệu cơ khí) và giao thoa ánh sáng cần phối hợp chặt chẽ với phần cơ khí.
+
+<style>
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+table td {
+  word-wrap: break-word;
+}
+</style>
