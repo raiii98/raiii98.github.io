@@ -379,12 +379,18 @@ img[data-src] {
     min-width: 100%;
     overflow-x: auto;
     border-spacing: 0;
+    table-layout: fixed;
+    /* Thêm vào đây */
 
     thead {
       border-bottom: solid 2px rgba(210, 215, 217, 0.75);
 
       th {
         @extend %table-cell;
+        overflow-wrap: break-word;
+        /* Thêm vào đây */
+        word-wrap: break-word;
+        /* Thêm vào đây */
       }
     }
 
