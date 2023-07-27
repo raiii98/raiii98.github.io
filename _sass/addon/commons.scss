@@ -371,9 +371,6 @@ img[data-src] {
 /* --- Begin of Markdown table style --- */
 
 /* it will be created by Liquid */
-/* --- Begin of Markdown table style --- */
-
-/* it will be created by Liquid */
 .table-wrapper {
   overflow-x: auto;
   margin-bottom: 1.5rem;
@@ -382,15 +379,12 @@ img[data-src] {
     min-width: 100%;
     overflow-x: auto;
     border-spacing: 0;
-    table-layout: fixed; // added this line
 
     thead {
       border-bottom: solid 2px rgba(210, 215, 217, 0.75);
 
       th {
         @extend %table-cell;
-        word-wrap: break-word; // added this line
-        overflow-wrap: break-word; // added this line
       }
     }
 
@@ -408,8 +402,6 @@ img[data-src] {
 
         td {
           @extend %table-cell;
-          word-wrap: break-word; // added this line
-          overflow-wrap: break-word; // added this line
         }
       }
     }
@@ -419,7 +411,6 @@ img[data-src] {
 
   /* table */
 }
-
 
 /* --- post --- */
 

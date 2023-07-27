@@ -122,14 +122,15 @@ Như vậy nhiệt độ Junction tại  mỗi một chip LED 1  trong trường
 
 <style>
 table {
-  table-layout: fixed;
-  width: 100%;
+  table-layout: fixed !important;
+  width: 100% !important;
 }
 
 table td {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  line-height: 1.5; /* or another value that suits your needs */
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  line-height: 1.5 !important;
 }
 </style>
+
 
