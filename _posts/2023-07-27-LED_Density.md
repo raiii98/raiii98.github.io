@@ -42,27 +42,30 @@ Trên một bóng đèn LED hình tròn, mật độ của chip LED (số lượ
 
 
 <table>
-  <tr>
-    <th></th>
-    <th>Đèn 1</th>
-    <th>Đèn 2</th>
-  </tr>
-  <tr>
-    <td>Độ sáng và phân bố ánh sáng</td>
-    <td>Đèn có thể tạo ra ánh sáng phân bố kém hơn (cần kết hợp chặt chẽ với thân vỏ để giao thoa ánh sáng tốt)</td>
-    <td>Đèn có thể tạo ra ánh sáng phân bố đều hơn, giúp tránh hiện tượng "đốm" ánh sáng</td>
-  </tr>
-    <tr>
-    <td>Kích thước mạch</td>
-    <td>Kích thước mạch nhỏ hơn dễ dàng sắp xếp linh kiện</td>
-    <td>Kích thước mạch lớn hơn khó khăn sắp xếp linh kiện, đi dây</td>
-  </tr>
-    <tr>
-    <td>Tản nhiệt</td>
-    <td>Khả năng tản nhiệt kém hơn</td>
-    <td>Khả năng tản nhiệt tốt hơn</td>
-  </tr>
+    <tbody>
+        <tr>
+            <th></th>
+            <th>Đèn 1</th>
+            <th>Đèn 2</th>
+        </tr>
+        <tr>
+            <td>Độ sáng và phân bố ánh sáng</td>
+            <td>Đèn có thể tạo ra ánh sáng phân bố kém hơn (cần kết hợp chặt chẽ với thân vỏ để giao thoa ánh sáng tốt)</td>
+            <td>Đèn có thể tạo ra ánh sáng phân bố đều hơn, giúp tránh hiện tượng "đốm" ánh sáng</td>
+        </tr>
+            <tr>
+            <td>Kích thước mạch</td>
+            <td>Kích thước mạch nhỏ hơn dễ dàng sắp xếp linh kiện</td>
+            <td>Kích thước mạch lớn hơn khó khăn sắp xếp linh kiện, đi dây</td>
+        </tr>
+            <tr>
+            <td>Tản nhiệt</td>
+            <td>Khả năng tản nhiệt kém hơn</td>
+            <td>Khả năng tản nhiệt tốt hơn</td>
+        </tr>
+    </tbody>
 </table>
+
 
 
 # 2. Ví dụ về khả năng tản nhiệt
