@@ -103,5 +103,8 @@ table {
 
 table td {
   word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5; /* or another value that suits your needs */
 }
 </style>
+
