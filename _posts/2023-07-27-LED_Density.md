@@ -31,16 +31,6 @@ Trên một bóng đèn LED hình tròn, mật độ của chip LED (số lượ
 >- Đèn 1: Sử dụng chip công suất cao hơn, mật độ LED thưa hơn
 >- Đèn 2: Sử dụng chip công suất thấp hơn, mật độ LED cao hơn
 
-
-|                             | Đèn 1                                                                                                   | Đèn 2                                                                            |
-| --------------------------- | ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| Độ sáng và phân bố ánh sáng | Đèn có thể tạo ra ánh sáng phân bố kém hơn (cần kết hợp chặt chẽ với thân vỏ để giao thoa ánh sáng tốt) | Đèn có thể tạo ra ánh sáng phân bố đều hơn, giúp tránh hiện tượng "đốm" ánh sáng | \ |
-|                             |                                                                                                         |                                                                                  |
-| Kích thước mạch             | Kích thước mạch nhỏ hơn dễ dàng sắp xếp linh kiện                                                       |                Kích thước mạch lớn hơn khó khăn sắp xếp linh kiện, đi dây                                                                 | \ |
-|                             |                                                                                                         |                                                                                  |
-| Tản nhiệt            |         Khả năng tản nhiệt kém hơn                                                                                                |    Khả năng tản nhiệt tốt hơn                                                                              |
-
-
 <table>
     <tbody>
         <tr>
@@ -65,8 +55,6 @@ Trên một bóng đèn LED hình tròn, mật độ của chip LED (số lượ
         </tr>
     </tbody>
 </table>
-
-
 
 # 2. Ví dụ về khả năng tản nhiệt
 
@@ -124,16 +112,7 @@ Như vậy nhiệt độ Junction tại  mỗi một chip LED 1  trong trường
 - Sử dụng chip LED công suất cao nhưng mật độ thấp giúp thu gọn kích thước mạch, dễ dàng hơn trong việc gia công sau này. Nhưng sẽ gây khó khăn trong việc tính toán tản nhiệt ( cần phải phối hợp thêm nhiều yếu tố như: layout, chất liệu PCB, chất liệu cơ khí) và giao thoa ánh sáng cần phối hợp chặt chẽ với phần cơ khí.
 
 <style>
-table {
-  table-layout: fixed !important;
-  width: 100% !important;
-}
-
-table td {
-  word-wrap: break-word !important;
-  overflow-wrap: break-word !important;
-  line-height: 1.5 !important;
-}
+     th {
+            text-align: center;
+        }
 </style>
-
-
